@@ -164,3 +164,62 @@ footer a {
 .footer-box-padtop {
     padding-top: 1rem;
 }
+
+/* =======customers======= */
+
+.icon {
+    width: 15;
+    height: 15;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+.subtitle {
+    display: flex;
+}
+
+#describe h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#profile .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#profile p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#identity, #love {
+    background-color: var(--orange);
+}
+
+#identity {
+    padding-top: 0.5rem;
+}
+
+#history, #setup {
+    background-color: var(--black);
+}
+
+#history h3, #setup h3, #setup p {
+    color: var(--white);
+}
+
+#history th {
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+#history img {
+    filter: invert(100%);
+    margin-bottom: 0.3rem;
+}

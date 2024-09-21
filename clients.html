@@ -5,52 +5,117 @@
 
     <title>Profil</title>
     <meta name="clients" content="Profil">
-    <!--<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="./css/global.css">-->
+    <link rel="stylesheet" href="styles\styles.css" type="text/css">
 </head>
 
 <body>
+
+    <!-- ===header=== -->
+
     <header class="header">
 
     </header>
 
+    <!-- ===fin header=== -->
+
+
+    <!-- ===main=== -->
 
     <section id="describe" class="fields">
-        <h2>Profil</h2>
+        <div class="container">
+            <div class="section-header">
+                <h2>Profil</h2>
+            </div>
+        </div>
     </section>
         
-    </section>
-    <section id="private" class="fields">
-        <h3>Identité</h3>
-        <p>John Doe
-        56 rue de Brest
-        22300 Lannion
+    <section id="profile" class="fields">
+        <div class="container" id="identity">
+            <div class="subtitle">
+                <h3>Identité</h3><img class="icon" src="./img/icon/editing.png">
+                    <!--Réutiliser inscription pour les modifications-->
+            </div>
+            <div class="grid">
+                <div class="grid__item">
+                    <p>Nom, Prénom<br>
+                    Adresse de livraison<br>
+                    Code postal<br>
+                    Ville<br>
+                    Téléphone<br>
+                    <br>
+                    Adresse de facturation<br>
+                    Code postal<br>
+                    Ville
+                    </p>
+                </div>
 
-        06 78 98 65 15
-        </p>
-        <!--Réutiliser inscription pour les modifications-->
-    </section>
-    <section id="history" class="fields">
-        <h3>Commandes</h3>
-        <p>Date Restaurant Prix
-        </p>
-    </section>
-    <section id="love" class="fields">
-        <h3>Restaurant préféré</h3>
-        <p>Aux plaisirs gustatifs</p>
-    </section>
-    <section id="setup" class="fields">
-        <h3>Configuration</h3>
-        <p>Type de notification
-            Mode de réception
-        </p>
+                <div class="grid__item">
+                    <p>John Doe<br>
+                    56 rue de Brest<br>
+                    22300<br>
+                    Lannion<br>
+                    06 78 98 65 15<br>
+                    <br>
+                    32 rue de Paris<br>
+                    22300<br>
+                    Lannion
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="history">
+            <div class="subtitle">
+                <h3>Historique</h3>
+            </div>
+            <div class="table">
+                <table class="t1">
+                    <tr><th>Date</th><th>Restaurant</th><th>Prix</th>
+                    </tr>
+                    <tr><th>12/06/2024</th><th>Aux plaisirs gustatifs</th><th>19 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    </tr>
+                    <tr><th>13/08/2024</th><th>Aux plaisirs gustatifs</th><th>23 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    </tr>
+                    <tr><th>15/09/2024</th><th>La corne d'abondance</th><th>32 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" id="love">
+            <div class="subtitle">
+                <h3>Restaurant préféré</h3><img class="icon" src="./img/icon/editing.png">
+            </div>
+            <div class="table">
+                <p>Aux plaisirs gustatifs
+                </p>
+            </div>
+        </div>
+
+        <div class="container" id="setup">
+            <div class="subtitle">
+                <h3>Paramètres</h3>
+            </div>
+            <div class="table">
+                <p>Type de notification<br>
+                    Mode de réception
+                </p>
+            </div>
+        </div>
     </section>
 
+    <!-- ===fin main=== -->
+
+
+    <!-- ===footer=== -->
 
     <footer class="footer">
 
     </footer>
+
+    <!-- ===fin footer=== -->
 </body>
