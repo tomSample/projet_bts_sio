@@ -24,27 +24,25 @@
 
 
     <!-- ===main=== -->
-
-    <section id="describe" class="fields">
-        <div class="container">
+      
+    <section id="profile" class="fields">
+        <div class="container" id="page__title">
             <div class="section-header">
                 <h2>Profil</h2>
             </div>
         </div>
-    </section>
-        
-    <section id="profile" class="fields">
         <div class="container" id="identity">
             <div class="subtitle">
                 <h3>Identité</h3><img class="icon" src="./img/icon/editing.png">
                     <!--Réutiliser inscription pour les modifications-->
             </div>
             <div class="grid">
-                <div class="grid__item">
+                <div class="grid__item__left">
                     <p>Nom, Prénom<br>
                     Adresse de livraison<br>
                     Code postal<br>
                     Ville<br>
+                    E-mail<br>
                     Téléphone<br>
                     <br>
                     Adresse de facturation<br>
@@ -53,11 +51,12 @@
                     </p>
                 </div>
 
-                <div class="grid__item">
+                <div class="grid__item__right">
                     <p>John Doe<br>
                     56 rue de Brest<br>
                     22300<br>
                     Lannion<br>
+                    monadresse@email.fr<br>
                     06 78 98 65 15<br>
                     <br>
                     32 rue de Paris<br>
@@ -73,14 +72,14 @@
                 <h3>Historique</h3>
             </div>
             <div class="table">
-                <table class="t1">
-                    <tr><th>Date</th><th>Restaurant</th><th>Prix</th>
+                <table>
+                    <tr><th class="first">Date</th><th class="first">Restaurant</th><th class="first">Prix</th>
                     </tr>
-                    <tr><th>12/06/2024</th><th>Aux plaisirs gustatifs</th><th>19 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">12/06/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">19 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
                     </tr>
-                    <tr><th>13/08/2024</th><th>Aux plaisirs gustatifs</th><th>23 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">13/08/2024</th><th class="follow">Aux plaisirs gustatifs</th><th class="follow">23 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
                     </tr>
-                    <tr><th>15/09/2024</th><th>La corne d'abondance</th><th>32 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
+                    <tr><th class="follow">15/09/2024</th><th class="follow">La corne d'abondance</th><th class="follow">32 €</th><th><img class="icon" src="./img/icon/upload.png"></th>
                     </tr>
                 </table>
             </div>
@@ -90,20 +89,25 @@
             <div class="subtitle">
                 <h3>Restaurant préféré</h3><img class="icon" src="./img/icon/editing.png">
             </div>
-            <div class="table">
-                <p>Aux plaisirs gustatifs
-                </p>
+            <div id="loved">
+                <form>
+                    <input class="modify" type="modify" placeholder="Aux plaisirs gustatifs"><br>
+                    <button class="save-button" type="submit">Enregistrer</button>
+                </form>
             </div>
         </div>
 
         <div class="container" id="setup">
             <div class="subtitle">
-                <h3>Paramètres</h3>
+                <h3>Gestion des notifications</h3>
             </div>
-            <div class="table">
-                <p>Type de notification<br>
-                    Mode de réception
-                </p>
+            <div class="chosen">
+                <input type="checkbox" id="states" names="states" checked>
+                <label for= "states">Notifications pour toute évolution des commandes</label><br>
+                <input type="checkbox" id="email" names="email" checked>
+                <label for= "email">Réception par e-mail</label><br>
+                <input type="checkbox" id="push" names="push" checked>
+                <label for= "push">Réception push</label>
             </div>
         </div>
     </section>
