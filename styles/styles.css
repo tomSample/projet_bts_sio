@@ -178,9 +178,17 @@ footer a {
     display: flex;
 }
 
-#describe h2 {
+#profile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#page__title {
     text-align: center;
-    padding-bottom: 1rem;
+    background-color: var(--orange);
 }
 
 #profile .grid {
@@ -188,14 +196,15 @@ footer a {
     flex-wrap: wrap;
 }
 
-#profile .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+#profile .grid__item__left {
+    padding-right: 2rem;
+    font-weight: bold;
 }
 
 #profile p {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    line-height: 1.25rem;
 }
 
 #identity, #love {
@@ -210,16 +219,48 @@ footer a {
     background-color: var(--black);
 }
 
-#history h3, #setup h3, #setup p {
+#history h3, #setup h3, #setup label {
     color: var(--white);
 }
 
-#history th {
+#history h3, #love h3 {
+    padding-bottom: 0.5rem;
+}
+
+#history .first {
     color: var(--white);
-    padding: 0.5rem;
+    padding: 0.15rem;
+}
+
+#history .follow {
+    color: var(--white);
+    padding: 0.15rem;
+    font-weight: normal;
 }
 
 #history img {
     filter: invert(100%);
     margin-bottom: 0.3rem;
+}
+
+.modify {
+    background-color: var(--orange);
+}
+
+::placeholder {
+    color: #1a1a1a;
+    opacity: 1; /*Firefox*/
+}
+
+.save-button {
+    background-color: var(--orange);
+    color: var(--orange);
+}
+
+#setup h3 {
+    padding-bottom: .75rem;
+}
+
+.chosen input {
+    margin-bottom: .5rem;
 }
