@@ -28,7 +28,7 @@ Ce projet a pour objectif de développer une plateforme de livraison de repas à
 **Base de données**: non déterminée
 
 
-# Guide des bonnes pratiques pour GitHub :
+# Guide des bonnes pratiques pour les commits via Git :
 
 **feat**: Nouvelle fonctionnalité
 
