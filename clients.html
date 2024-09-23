@@ -34,6 +34,7 @@
         <div class="container" id="identity">
             <div class="subtitle">
                 <h2>Identité</h2><img class="icon" src="./img/icon/editing.png">
+
                     <!--Réutiliser inscription pour les modifications-->
             </div>
             <div class="grid">
@@ -47,7 +48,10 @@
                     <br>
                     Adresse de facturation<br>
                     Code postal<br>
-                    Ville
+                    Ville<br>
+                    <br>
+                    Mode de paiement<br>
+                    Derniers numéros<br>
                     </p>
                 </div>
 
@@ -59,9 +63,12 @@
                     monadresse@email.fr<br>
                     06 78 98 65 15<br>
                     <br>
-                    32 rue de Paris<br>
+                    32 rue de Paris<img class="icon__intern" src="./img/icon/add.png"><br>
                     22300<br>
-                    Lannion
+                    Lannion<br>
+                    <br>
+                    Carte bleue<img class="icon__intern" src="./img/icon/arrow.png"><br>
+                    2659<br>
                     </p>
                 </div>
             </div>
@@ -83,6 +90,9 @@
                     </tr>
                 </table>
             </div>
+            <div class="add">
+                <p>En voir plus</p><img class="icon" src="./img/icon/add.png">
+            </div>
         </div>
 
         <div class="container" id="love">
@@ -99,13 +109,27 @@
             <div class="subtitle">
                 <h2>Gestion des notifications</h2>
             </div>
-            <div class="chosen">
+            <div id="chosen">
+                <p>Vous pouvez désactiver les notifications à tout moment. Nous nous engageons à ne jamais vendre vos informations à des tiers.
+                </p><br>
                 <input type="checkbox" id="states" names="states" checked>
-                <label for= "states">Notifications pour toute évolution des commandes</label><br>
+                <label for= "states">Notifications des commandes en cours</label><br>
+                <p>Soyez informé(e) lorsque votre livreur ou livreuse est en route et laissez-lui la possibilité de vous contacter si nécessaire.
+                </p><br>
+
                 <input type="checkbox" id="email" names="email" checked>
                 <label for= "email">Réception par e-mail</label><br>
                 <input type="checkbox" id="push" names="push" checked>
-                <label for= "push">Réception push</label>
+                <label for= "push">Réception push</label><br>
+                <input type="checkbox" id="publicity" names="publicity" checked>
+                <label for= "publicity">Notifications promotionnelles</label><br>
+                <p>Recevez toutes nos offres spéciales et promotions.
+                </p><br>
+                
+                <br>    
+                <h4>Supprimer le compte</h4>
+                <p class="delete">Vous voulez nous quitter ? Nous serons tristes mais autant nous séparer en bonne intelligence.
+                </p>
             </div>
         </div>
     </section>
@@ -123,6 +147,8 @@
 </body>
 
 
-    <!-- ===licences=== -->
+    <!-- ===licences=== 
     <a href="https://www.flaticon.com/free-icons/download" title="download icons">Download icons created by joalfa - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/modify" title="modify icons">Modify icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by dmitri13 - Flaticon</a> 
+    <a href="https://www.flaticon.com/free-icons/user-interface" title="user interface icons">User interface icons created by QudaDesign - Flaticon</a> -->

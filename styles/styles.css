@@ -173,6 +173,12 @@ footer a {
     height: 15;
     margin-top: 0.2rem;
     margin-left: 0.5rem;
+    padding-top: 0.2rem;
+}
+.icon__intern {
+    width: 15;
+    height: 15;
+    margin-left: 0.5rem;
 }
 
 .subtitle {
@@ -221,7 +227,7 @@ footer a {
     background-color: var(--black);
 }
 
-#history h2, #setup h2, #setup label {
+#history h2, #history p, #setup h2, #setup label, #setup p, #setup h4 {
     color: var(--white);
 }
 
@@ -247,6 +253,13 @@ footer a {
     margin-bottom: 0.3rem;
 }
 
+#history .add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: .75rem;
+}
+
 #love p {
     padding-top: 0.1rem;
 }
@@ -255,10 +268,20 @@ footer a {
     padding-bottom: 1rem;
 }
 
-.chosen input {
+#chosen input {
     margin-bottom: .5rem;
 }
 
-.chosen label {
+#chosen label {
     font-size: 1.05rem;
+    padding-left: 0.5rem;
+}
+
+#chosen p {
+    font-size: .85rem;
+    color: #778899;
+}
+
+#chosen h4, #chosen .delete {
+    text-align: center;
 }
