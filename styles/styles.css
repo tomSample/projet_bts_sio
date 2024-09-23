@@ -167,6 +167,7 @@ footer a {
 
 /* =======customers======= */
 
+
 .icon {
     width: 15;
     height: 15;
@@ -205,6 +206,7 @@ footer a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     line-height: 1.25rem;
+    font-size: 1.05rem;
 }
 
 #identity, #love {
@@ -219,23 +221,25 @@ footer a {
     background-color: var(--black);
 }
 
-#history h3, #setup h3, #setup label {
+#history h2, #setup h2, #setup label {
     color: var(--white);
 }
 
-#history h3, #love h3 {
-    padding-bottom: 0.5rem;
+#history h2, #love h2 {
+    padding-bottom: 0.75rem;
 }
 
 #history .first {
     color: var(--white);
     padding: 0.15rem;
+    font-size: 1.05rem;
 }
 
 #history .follow {
     color: var(--white);
     padding: 0.15rem;
     font-weight: normal;
+    font-size: 1.05rem;
 }
 
 #history img {
@@ -243,24 +247,18 @@ footer a {
     margin-bottom: 0.3rem;
 }
 
-.modify {
-    background-color: var(--orange);
+#love p {
+    padding-top: 0.1rem;
 }
 
-::placeholder {
-    color: #1a1a1a;
-    opacity: 1; /*Firefox*/
-}
-
-.save-button {
-    background-color: var(--orange);
-    color: var(--orange);
-}
-
-#setup h3 {
-    padding-bottom: .75rem;
+#setup h2 {
+    padding-bottom: 1rem;
 }
 
 .chosen input {
     margin-bottom: .5rem;
+}
+
+.chosen label {
+    font-size: 1.05rem;
 }
