@@ -20,6 +20,12 @@ h1 {
     font-size: 6rem;
 }
 
+.invisible {
+    display: none;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0;
+}
 
 
 /* =======header======= */
@@ -293,18 +299,72 @@ footer a {
 
 /* ==== administration ==== */
 
+.container__title {
+    text-align: center;
+    background-color: var(--orange);
+}
+
+#man__grid {
+    display: flex;
+    flex: row;
+}
+
+.grid__item__nav {
+    background-color: var(--black);
+    width: 15%;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    align-content: center;
+}
+
+.grid_nav li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.grid_nav a {
+    color: var(--white);
+}
+
+#man__customers {
+    background-color: var(--orange);
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+#man__search {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#man__button {
+    height: 1.5rem;
+}
+
+.views__list {
+    background-color: var(--white);
+    width: 30%;
+    margin-inline: auto;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
 .views__list li {
     list-style: none;
     text-align: center;
-    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
-.views__list li::after {
+.views__list li::after { /* Attention, élément indépendant créé, nécessite de vérifier l'alignement sur TOUTES les largeurs d'écran*/
     display: block;
     content:"";
     width: 100px;
     height: 1px;
-    background: var(--orange);
+    background: var(--blue);
     position: absolute;
     left: 50%;
     margin-left: -50px;
