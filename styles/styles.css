@@ -68,14 +68,19 @@ nav {
     font-size: 3rem;
 }
 
+.Indique_infos_restaurateur {
+    text-align: center;
+}
+
 .hero-banner form {
     display: flex;
     justify-content: center;
 }
 
 .home-search-bar {
-    width: 26rem;
-    height: 4rem;
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 5px;
     padding: 1rem;
     border-radius: 30px;
     border: 2px solid;
@@ -217,7 +222,7 @@ footer a {
     display: flex; /* Assure que le contenu est centré */
     flex-direction: column; /* Arrange les liens verticalement */
     width: 75rem;
-    height: 69px    ;
+    height: 69px;
     border: 1px solid;
     background-color: var(--black);
     border-radius: 30px;
