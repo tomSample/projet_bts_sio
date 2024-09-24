@@ -293,11 +293,20 @@ footer a {
 
 /* ==== administration ==== */
 
-.views__list .li::after {
+.views__list li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.views__list li::after {
     display: block;
     content:"";
-    width: 22px;
-    height: 3px;
-    background: #222;
+    width: 100px;
+    height: 1px;
+    background: var(--orange);
     position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    transform: translateY(0.4rem);
 }
