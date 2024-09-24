@@ -22,9 +22,9 @@ h1 {
 
 .invisible {
     display: none;
-    margin: 0;
     font-size: 1rem;
     padding: 0;
+    margin: 0;
 }
 
 
